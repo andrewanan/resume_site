@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  background: #000000;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+
+h1 {
+  display: inline-block;
+  position: relative;
+  font-size: 3rem;
+  color: #b66dc6;
+
+  
+}
+h1::after{
+  content: "thats my name";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+
+  width: 100%;
+  height: 2px;
+  background-color: #b66dc6;
+  transition: transform .3s ease;
+
+}
+
+h1:hover::after{
+  transform: translateX(-50%) scaleX(1);
+}
+
+.main-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.header-container {
+  padding: 1rem;
+  background-color: #000000;
+}
+.footer-container {
+  display: flex;
+  padding: 1rem;
+  margin-top: auto;
+  color: #9e9a9a;
+  justify-content: center;
+  align-content: center;
+  max-width: 700px;
+}
+
+.main-content {
+  padding: 1rem;
+}
+
+.home-section {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.about-section{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.project_section{
+  color: #b66dc6; /* changes link color on project page */
+}
+
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+.nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #b66dc6;
+}
+
+.nav a:hover{
+  text-decoration: underline;
+}
+
+

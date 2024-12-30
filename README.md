@@ -6,5 +6,11 @@ First, run the development server:
 
 ```bash
 npm run dev
+```
 
-# This is a test 
+# Work in progress
+
+### To Be Added
+- CSS effects
+- More project content
+- define styles

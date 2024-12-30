@@ -1,9 +1,7 @@
 export default function Home() {
   return (
     <section className="home-section">
-      <div>
       <h1>Andrew Anantharajah</h1>
-      </div>
       <h3>Computer Engineer</h3>
       <p>I'm a student at Stevens Institute of Technology, interested in{' '} 
               <span className='keyword' data-effect='finance'>finance</span>,{' '} 

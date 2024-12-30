@@ -10,7 +10,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body>
-      <div className="main-container">
         <header className="header-container">
           <nav className='nav'> 
             <Link href="/">Home</Link>
@@ -20,7 +19,6 @@ export default function RootLayout({ children }) {
         </header>
         
         <main>{children}</main>
-        </div>
         <footer className="footer-container">
           <p>©2024 Andrew Anantharajah</p>
 

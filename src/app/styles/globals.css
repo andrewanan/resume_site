@@ -86,14 +86,35 @@ h1:hover::after{
   gap: 1rem;
 }
 .nav a {
-  margin: 0 1rem;
+  position: relative;
   text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
   color: #b66dc6;
 }
 
 .nav a:hover{
-  text-decoration: underline;
+  color: #ffffff;
 }
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 2px;
+  width: 100%;
+  background-color: #b66dc6;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
 
 a {
   color:#b66dc6;
